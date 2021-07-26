@@ -19,8 +19,8 @@ spec:
       annotations:
         prometheus.io.scrape: "true"
     spec:
-      containers:
       hostPID: true
+      containers:
       - args:
         - --path.sysfs=/host/sys
         - --path.rootfs=/host/root
