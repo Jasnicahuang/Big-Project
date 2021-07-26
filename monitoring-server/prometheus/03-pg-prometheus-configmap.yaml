@@ -136,11 +136,7 @@ data:
         - api_servers:
           - 'https://api.bp.jasnicahuang.xyz'
           in_cluster: true
-        - role: pod
-
-  # You can specify the following annotations (on pods):
-  #   prometheus.io.scrape: true - scrape this pod
-  #   prometheus.io.port - scrape this port
+          role: pod
         relabel_configs:
         - source_labels: [__meta_kubernetes_pod_annotation_prometheus_io_scrape]
           action: keep
